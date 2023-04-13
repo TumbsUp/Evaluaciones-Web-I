@@ -82,16 +82,9 @@ for (let i = 0; i < pinguins.length; i++) {
 
 
 //VI.CREAR ARRAY QUE DEVUELVA LOS PINGUINOS CON MÁS DE 2 PIES
-const MSJ4= pinguins.map((pinguin, index)=>{
-    return{
-        nombre: pinguin.name,
-        origen: pinguin.origin,
-        Vuela: pinguin.canFly,
-        Pies: pinguin.numberOfFeet
-    }
-}).filter(x=>x.Pies>2)
+// const MSJ4= c.filter(x=>x.Pies>2)
 
-console.log(MSJ4);
+// console.log(MSJ4);
 
 
 //VII. AGREGAR PROPIEDAD DE FAVORITE FOODS COMO MATRIZ DE TRES CADENAS
@@ -109,8 +102,16 @@ for (let i = 0; i < pinguins.length; i++) {
 
 
 //IX. MODIFICAR EL ULTIMO VALOR DE LA LISTA DE COMIDAS FAVORITAS POR "PIÑAS"
-// const elminados = pinguins.favoriteFoods.splice(2,1, 'Piñas');
-// console.log(pinguins);
+
+
+pinguins.map((penguin, index)=>
+    {
+        penguin.favoriteFoods[2]="piñ"
+    }
+)
+
+
+console.log(pinguins);
 
 
 //X. ACCEDER A LA PROPIEDAD DE COMIDAS HE IMPRIMIR CADA UNA DE ELLAS
