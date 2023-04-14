@@ -8,24 +8,16 @@
     <title>Tarea 3</title>
 </head>
 <body>
-    <form onsubmit="return impar()">
+    <form onsubmit="return impar(7)">
         <div class="number">
-            <label>Número</label>
-            <input type="number" id="impar">
             <input type="submit" value="Impar o Par">
         </div>
     </form>
-    <form onsubmit="return mayusc()">
-        <div class="Mayusc">
-            <label>Cadena Texto</label>
-            <input type="text" id="mayus">
+    <form onsubmit="return mayusc('mata')">
             <input type="submit" value="Mayusc">
         </div>
     </form>
-    <form onsubmit="return palindro()">
-        <div class="Palindromo">
-            <label>¿Es palindromo?</label>
-            <input type="text" id="Palindromo">
+    <form onsubmit="return palindro('La ruta nos aporto otro paso natural')">
             <input type="submit" value="Palindromo">
         </div>
     </form>
