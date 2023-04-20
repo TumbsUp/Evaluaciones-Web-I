@@ -1,0 +1,72 @@
+/* Color para el cuerpo */
+body{
+    background-color: #4ba3c9;
+}
+/* Estilos del div principal de la calculadora */
+.Calculadora{
+    width: 450px;
+    margin: 100px 0px 0px 545px;
+    height: 300px;
+}
+/* Estilos para el campo de los resultados */
+.Result{
+    background-color: black;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+/* Estilos para el input text de resultado */
+#result{
+    background-color: none;
+    margin-top: 20px;
+    width: 100%;
+    text-align: right;
+}
+/* Estilo para el color de letra */
+.Result>p{
+    color: white;
+}
+/* Estilos para el botón de Suma */
+.plus{
+    background-color: #99a1ad;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    height: 30px;
+}
+/* Estilos para el botón de Resta */
+.minus{
+    background-color: #99a1ad;
+    height: 30px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+/* Estilos para el botón de Multiplicación */
+.mult{
+    background-color: #99a1ad;
+    height: 30px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+/* Estilos para el botón de División */
+.divis{
+    background-color: #99a1ad;
+    height: 30px;
+    align-content: center;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+/* Estilos para el div que contiene los números, el punto y el CE */
+.left{
+    float: left;
+    background-color: white;
+    width: 370px;
+    height: 125px;
+}
+/* Estilos para el div que contiene el botón de igual */
+.right{
+    float: right;
+    background-color: orange;
+    width: 80px;
+    height: 125px;
+    padding: 30px 0px 0px 30px;
+}

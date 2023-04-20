@@ -1,5 +1,8 @@
 //Función para verificar que un número sea par o impar
 function impar(numb){
+
+   var x= document.getElementById('valor').value;
+alert(x);
     if(numb % 2 === 0){
         alert('El número es Par')
         return true;

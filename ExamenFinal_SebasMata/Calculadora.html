@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script>"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/ExamenFinal/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Div General para la calculadora-->
+    <div class="Calculadora">
+        <!--Div para Enseñar los resultados-->
+        <div class="row Result">
+            <div class="col col-md-12">
+                <input type="text" name="result" id="result" value="0">
+            </div>
+        </div>
+        <!--Botones de Operaciones Aritmeticas-->
+        <div class="row">
+            <div class="col col-md-3 plus">
+            <input type="button" value="+" onclick="change('+')" id="Sumar">
+            </div>
+            <div class="col col-md-3 minus">
+                <input type="button" value="-" onclick="change('-')" id="Restar">
+            </div>
+            <div class="col col-md-3 mult">
+                <input type="button" value="X" onclick="change('*')" id="Multiplicar">
+            </div>
+            <div class="col col-md-3 divis">
+                <input type="button" value="/" onclick="change('/')" id="Dividir">
+            </div>
+        </div>
+        <!--Botones de Números y del igual-->
+        <div class="row numbers">
+            <div class="col col-md-12">
+                <!--Sección para los números, el punto y el CE-->
+                <div class="left">
+                    <div class="row">
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="7" onclick="change('7')" id="7">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="8" onclick="change('8')" id="8">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="9" onclick="change('9')" id="9">
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="4" onclick="change('4')" id="4">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="5" onclick="change('5')" id="5">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="6" onclick="change('6')" id="6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="3" onclick="change('3')" id="3">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="2" onclick="change('2')" id="2">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="1" onclick="change('1')" id="1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="0" onclick="change('0')" id="0">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="." onclick="change('.')" id=".">
+                        </div>
+                        <div class="col col-md-4" style="border-right: solid 2px;border-bottom: solid 2px;">
+                            <input type="button" value="CE" onclick="erase()" id="CE">
+                        </div>
+                    </div>
+            </div>
+            <!--Sección para el botón grande del igual-->
+            <div class="right">
+                <div class="row">
+                    <div class="col col-md-12">
+                        <input type="button" value="=" onclick="equals()" id="equals">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"</script>
+    <script src="/ExamenFinal/js/calc.js"></script>
+</body>
+</html>
